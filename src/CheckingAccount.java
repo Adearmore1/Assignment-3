@@ -3,6 +3,9 @@ public class CheckingAccount {
     /**
      * 1. Store the amount money in the account
      */
+    private double balance;
+    
+
 
     public CheckingAccount(){
         this(0.0);
@@ -12,6 +15,7 @@ public class CheckingAccount {
         /**
          * 2. Set the amount of money in the account to amount
          */
+        balance=amount;
     }
 
     public void deposit(Double amount){
