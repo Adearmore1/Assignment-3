@@ -26,6 +26,6 @@ public class Driver {
 
         //8. check that alice has more funds in her account than bob
 
-        //assert(/* Uncomment and insert code here */);
+        assert(alice.getBalance() > bob.getBalance());
     }
 }
