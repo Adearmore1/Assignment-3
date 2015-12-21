@@ -2,6 +2,7 @@
 public class CheckingAccount {
     /**
      * 1. Store the amount money in the account
+     * PD 9:10 PM test
      */
     private double balance;
     
