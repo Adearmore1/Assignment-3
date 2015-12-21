@@ -12,7 +12,7 @@ public class Driver {
         CheckingAccount alice = new CheckingAccount(500.0);
 
         //6. Withdraw $120 from alice's account
-        //Insert code here
+        alice.withdraw(120.0);
 
         assert(alice.getBalance() == 380.0);
 
@@ -20,7 +20,7 @@ public class Driver {
         CheckingAccount bob = new CheckingAccount();
 
         //7. Deposit $20 into bob's account
-        //Insert code here
+        bob.deposit(20.0);
 
         assert(bob.getBalance() == 20.0);
 

@@ -2,13 +2,13 @@
 public class CheckingAccount {
     /**
      * 1. Store the amount money in the account
-     * PD 9:10 PM test
      */
     private double balance;
     
 
 
     public CheckingAccount(){
+
         this(0.0);
     }
 
@@ -23,6 +23,7 @@ public class CheckingAccount {
         /**
          * 3. Deposits amount into the account
          */
+        balance += amount;
     }
 
     public double withdraw(Double amount){
@@ -34,6 +35,13 @@ public class CheckingAccount {
          */
 
 
+        if (balance >= amount) {
+            balance -= amount;
+        }
+        else
+        {
+            throw new RuntimeException("Sorry, you don't have enough money in your account.");
+        }
         return amount;
     }
 
@@ -41,6 +49,6 @@ public class CheckingAccount {
         /**
          * 5. Return the current balance of the account
          */
-        return 0.0;
+        return balance;
     }
 }
